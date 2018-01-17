@@ -1,0 +1,18 @@
+
+{
+  "extends": "eslint:recommended",
+
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "jquery": true
+  },
+
+  "rules": {
+    "no-undef": 0,
+    "quotes": [2, "single"],
+    "no-unused-vars": "warn",
+    "no-useless-escape": "warn"
+  }
+}

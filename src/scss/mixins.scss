@@ -1,0 +1,10 @@
+
+/**
+ * Шрифт в REM
+ * @param  {number} $size кол-во пикселей (указывается в px)
+ */
+
+@mixin font ($size) {
+  font-size: $size;
+  font-size: rem($size/1px);
+}

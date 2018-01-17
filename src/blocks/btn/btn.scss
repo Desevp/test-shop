@@ -1,0 +1,20 @@
+.btn {
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: box-shadow $time-tr;
+
+  &:hover {
+    box-shadow: $shadow;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.btn_link {
+  text-decoration: none;
+}
