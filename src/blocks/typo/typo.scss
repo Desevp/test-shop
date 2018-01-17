@@ -44,17 +44,17 @@ body {
   line-height: $line-height;
   color: $text-color;
 
-  @media (max-width: $wide-desktop) {
-    @include font(16px);
-  }
-
-  @media (max-width: $desktop) {
-    @include font(14px);
-  }
-
-  @media (max-width: $tablet) {
-    @include font(12px);
-  }
+  // @media (max-width: $wide-desktop) {
+  //   @include font(16px);
+  // }
+  //
+  // @media (max-width: $desktop) {
+  //   @include font(14px);
+  // }
+  //
+  // @media (max-width: $tablet) {
+  //   @include font(12px);
+  // }
 }
 
 a {
@@ -84,51 +84,27 @@ h6 {
 }
 
 // .h1,
-// .h2,
-// .h3,
-h1,
-h2,
-h3 {
-
-  // margin-top: $line-height;
-  // margin-bottom: ($line-height / 2);
-}
-
-// .h4,
-// .h5,
-// .h6,
-h4,
-h5,
-h6 {
-  // margin-top: ($line-height / 2);
-  // margin-bottom: ($line-height / 2);
-}
-
-// .h1,
 h1 {
-  font-weight: 700;
-  font-style: italic;
+  font-weight: 500;
   font-size: $font-size--h1;
 }
 
 // .h2,
 h2 {
-  font-weight: 600;
-  font-style: italic;
+  font-weight: 500;
   font-size: $font-size--h2;
 }
 
 // .h3,
 h3 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: $font-size--h3;
 }
 
 // .h4,
 h4 {
-  font-weight: 700;
+  font-weight: 300;
   font-size: $font-size--h4;
-  color: $theme-color;
 }
 
 // .h5,
@@ -163,24 +139,6 @@ ol {
   padding-left: 0;
 }
 
-ul li {
-  position: relative;
-  list-style-type: none;
-
-  $line-height-half: calc(1em - 3px);
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: $line-height-half;
-    left: rem(-15);
-    display: block;
-    width: rem(6);
-    height: rem(6);
-    border-radius: 50%;
-    background-color: $theme-color;
-  }
-}
 
 ol ol,
 ul ul,

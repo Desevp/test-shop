@@ -1,38 +1,28 @@
 
-$theme-color:                  #fe6126;
+$theme-color:                  #000000;
 
 // Семантические цвета
 
-$text-color:                  #363636;
-$text-color-light:            #686868;
-$text-footer-color:           #a6a6a6;
+$text-color:                  #000000;
+$text-color-light:            #9b9b9b;
 $title-color:                 #000000;
 
 $main-bg:                     #eaeaea;
-$dark-bg:                     #2e3335;
-$container-bg:                #ffffff;
-$element-light-bg:            #f2f2f2;
-$element-dark-bg:             #e5e6e8;
 
-$btn-color: $theme-color;
+$content-bg:                #ffffff;
 
-// Цвета тегов
-
-$tag-orange: $theme-color;
-$tag-blue: #216da3;
-$tag-black: #000000;
-$tag-green: #1aaf6c;
+$btn-color:                   $theme-color;
 
 $link-color:                  $text-color;
-$link-color-hover:            $theme-color;
+$link-color-hover:            #ffffff;
 
-$border-color:                #bebebe;
+$border-color:                #000000;
 
 // Базовая типографика
 
 $basefontSize: 16px;
 
-$font-size:                   18px;
+$font-size:                   14px;
 $font-size--h1:               2.8em;
 $font-size--h2:               2.2em;
 $font-size--h3:               1.5em;
@@ -41,9 +31,9 @@ $font-size--h5:               1em;
 $font-size--h6:               1em;
 $font-size--small:            0.75em;
 
-$line-height:                 2em;
+$line-height:                 1.2em;
 
-$font-family:                 'Fira Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+$font-family:                 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
 $font-family--serif:          'Georgia', 'Times New Roman', 'Times', serif;
 $font-family--monospace:      'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
 $font-family--headings:       $font-family;
@@ -57,13 +47,11 @@ $fablet:                       767px;
 $tablet:                       1023px;
 $desktop:                      1280px;
 $middle-desktop:               1440px;
-$wide-desktop:                 1680px;
 
 $container-mobile:            $mobile - 5;
 $container-fablet:            $fablet - 5;
 $container-tablet:            $tablet - 10;
 $container-desktop:           $desktop - 20;
-$container-wide-desktop:      $wide-desktop - 20;
 
 // Разное
 

@@ -36,8 +36,19 @@
     flex-grow: 1;
     position: relative;
     width: 100%;
-    margin: 0 auto;
-    background-color: #ffffff;
+    background-color: $content-bg;
+    max-width: 740px;
+    margin: rem(50) auto;
+
+    @media (max-width: $fablet) {
+      width: auto;
+      margin: rem(30);
+    }
+
+    @media (max-width: $mobile) {
+      width: auto;
+      margin: rem(15);
+    }
   }
 
   &__footer-wrapper {

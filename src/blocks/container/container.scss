@@ -2,13 +2,14 @@
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 0 rem(64);
-
-  @media (max-width: $desktop) {
-    padding: 0 rem(40);
-  }
+  padding: rem(40);
 
   @media (max-width: $fablet) {
-    padding: 0 rem(20);
+    width: 100%;
+    padding: rem(30);
+  }
+
+  @media (max-width: $mobile) {
+    padding: rem(15);
   }
 }

@@ -2,6 +2,7 @@
   "blocks": {
     "page": [],
     "typo": [],
+    "container": [],
     "sprite-svg": [],
     "object-fit-polyfill": [],
     "visually-hidden": [],
