@@ -14,7 +14,7 @@ $content-bg:                #ffffff;
 $btn-color:                   $theme-color;
 
 $link-color:                  $text-color;
-$link-color-hover:            #ffffff;
+$link-color-hover:            rgba($text-color, 0.5);
 
 $border-color:                #000000;
 
@@ -23,15 +23,15 @@ $border-color:                #000000;
 $basefontSize: 16px;
 
 $font-size:                   14px;
-$font-size--h1:               2.8em;
-$font-size--h2:               2.2em;
-$font-size--h3:               1.5em;
+$font-size--h1:               1.5em;
+$font-size--h2:               1em;
+$font-size--h3:               1em;
 $font-size--h4:               1em;
 $font-size--h5:               1em;
 $font-size--h6:               1em;
 $font-size--small:            0.75em;
 
-$line-height:                 1.2em;
+$line-height:                 1.4em;
 
 $font-family:                 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
 $font-family--serif:          'Georgia', 'Times New Roman', 'Times', serif;

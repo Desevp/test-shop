@@ -7,7 +7,9 @@
     "object-fit-polyfill": [],
     "visually-hidden": [],
     "link": [],
-    "btn": []
+    "btn": [],
+    "accordion": [],
+    "shop": []
   },
   "addCssBefore": [
     "../../node_modules/normalize.css/normalize.css",
@@ -18,8 +20,7 @@
   "addCssAfter": [
     "./src/scss/print.scss"
   ],
-  "singleCompiled": [
-  ],
+  "singleCompiled": [],
   "addJsBefore": [
     "./node_modules/jquery/dist/jquery.min.js",
     "./node_modules/svg4everybody/dist/svg4everybody.js",

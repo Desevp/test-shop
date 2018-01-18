@@ -3,6 +3,10 @@
   cursor: pointer;
   transition: all $time-tr;
 
+  &:hover {
+    color: $link-color-hover;
+  }
+
   &_block {
     position: absolute;
     top: 0;

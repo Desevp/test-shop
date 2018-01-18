@@ -1,0 +1,68 @@
+.shop {
+  position: relative;
+  margin-bottom: rem(20);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__content {
+    display: flex;
+
+    @media (max-width: $fablet) {
+      display: block;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    left: calc(100% - 140px);
+    height: rem(30);
+    vertical-align: top;
+
+    @media (max-width: $fablet) {
+      position: relative;
+      left: 0;
+      line-height: rem(30);
+    }
+  }
+
+  &__info {
+    position: relative;
+    padding-top: rem(30);
+    width: rem(140);
+    flex-shrink: 0;
+
+    @media (max-width: $fablet) {
+      padding-top: rem(30);
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  &__info-item {
+    position: relative;
+    margin-bottom: rem(20);
+  }
+
+  &__address {
+
+    @media (max-width: $fablet) {
+      width: 45%;
+    }
+  }
+
+  &__img {
+    position: relative;
+    flex-grow: 1;
+    margin-right: rem(30);
+
+    @media (max-width: $fablet) {
+      width: calc(100% + 60px);
+      left: -30px;
+      margin-right: 0;
+    }
+  }
+}

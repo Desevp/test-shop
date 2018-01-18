@@ -1,0 +1,104 @@
+
+.accordion {
+  list-style: none;
+  margin: 0;
+  transition: all $time-tr ease-in-out;
+
+  &__title {
+
+    @media (max-width: $fablet) {
+      display: block;
+      margin: 0;
+      cursor: pointer;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      border-bottom: 1px solid #000000;
+      opacity: 0;
+    }
+  }
+
+  &__content {
+
+    @media (max-width: $fablet) {
+      position: relative;
+      overflow: hidden;
+      max-height: 800px;
+      opacity: 1;
+      transform: translate(0, 0);
+      z-index: 2;
+      transition: all $time-tr ease-in-out;
+    }
+  }
+
+  &__section {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    transition: all $time-tr ease-in-out;
+
+    input[type='checkbox'] {
+      display: none;
+
+      @media (max-width: $fablet) {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+      }
+
+      &:checked ~ .accordion__title::before {
+
+        @media (max-width: $fablet) {
+          opacity: 1;
+          transition: opacity 2s;
+        }
+      }
+
+      &:checked ~ .accordion__content {
+
+        @media (max-width: $fablet) {
+          max-height: 0;
+          opacity: 0;
+        }
+      }
+
+      &:checked ~ .accordion__switch::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__switch {
+    border-bottom: 1px solid transparent;
+    transition: border-color $time-tr;
+
+    &::after {
+      content: none;
+      position: absolute;
+      // width: 7px;
+      // height: 3px;
+      width: rem(14);
+      height: rem(6);
+      top: 50%;
+      right: rem(40);
+      transform: translateY(-50%);
+      background-image: url('/img/accordion-arrow.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: transform $time-tr;
+
+      @media (max-width: $fablet) {
+        content: '';
+      }
+    }
+  }
+}
