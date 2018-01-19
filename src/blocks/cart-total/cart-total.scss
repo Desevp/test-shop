@@ -1,0 +1,27 @@
+.cart-total {
+
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+
+  &::before {
+    content: '';
+    width: 100%;
+    display: block;
+    height: 1px;
+    background-color: $theme-color;
+    margin-right: rem(20);
+  }
+
+  &__val {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+
+    &::before {
+      content: 'Итого: ';
+      display: inline-block;
+      margin-right: rem(5);
+    }
+  }
+}

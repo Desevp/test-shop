@@ -9,7 +9,16 @@
     "link": [],
     "btn": [],
     "accordion": [],
-    "shop": []
+    "shop": [],
+    "sale-form": [],
+    "field-input": [],
+    "cart": [],
+    "cart-product": [],
+    "del": [],
+    "icon": [],
+    "counter": [],
+    "radiolist": [],
+    "cart-total": []
   },
   "addCssBefore": [
     "../../node_modules/normalize.css/normalize.css",

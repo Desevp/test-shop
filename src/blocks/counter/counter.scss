@@ -1,0 +1,50 @@
+.counter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__btn {
+    opacity: 1;
+    transition: opacity $time-tr;
+
+    &_is-disable {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
+  &__value {
+    width: rem(30);
+    text-align: center;
+    margin: 0 rem(10);
+    border: none;
+    cursor: default;
+    font-weight: 300;
+  }
+
+  &__minus {
+    position: relative;
+    width: rem(10);
+    height: rem(10);
+    background-image: svg-load('../blocks/counter/img_to_bg/minus.svg', stroke=#000000);
+    cursor: pointer;
+    transition: background-image $time-tr;
+
+    &:hover {
+      background-image: svg-load('../blocks/counter/img_to_bg/minus.svg', stroke=#9b9b9b);
+    }
+  }
+
+  &__plus {
+    position: relative;
+    width: rem(10);
+    height: rem(10);
+    background-image: svg-load('../blocks/counter/img_to_bg/plus.svg', stroke=#000000);
+    cursor: pointer;
+    transition: background-image $time-tr;
+
+    &:hover {
+      background-image: svg-load('../blocks/counter/img_to_bg/plus.svg', stroke=#9b9b9b);
+    }
+  }
+}

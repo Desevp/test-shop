@@ -91,7 +91,7 @@
       top: 50%;
       right: rem(40);
       transform: translateY(-50%);
-      background-image: url('/img/accordion-arrow.svg');
+      background-image: svg-load('../blocks/accordion/img_to_bg/accordion-arrow.svg');
       background-repeat: no-repeat;
       background-size: cover;
       transition: transform $time-tr;

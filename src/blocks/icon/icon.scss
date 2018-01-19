@@ -1,0 +1,27 @@
+.icon {
+  margin-left: rem(3);
+
+
+  &::after {
+    // position: absolute;
+    // left: 100%;
+    // top: 0;
+    // margin-left: rem(2);
+  }
+
+  &_price {
+
+    &::after {
+      content: '₽';
+    }
+  }
+
+  &_sale {
+
+    word-spacing: -0.36em;
+
+    &::after {
+      content: '%';
+    }
+  }
+}

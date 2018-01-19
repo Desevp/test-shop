@@ -1,0 +1,65 @@
+.radiolist {
+  list-style-type: none;
+  margin: 0;
+  text-align: left;
+
+  .radiolist__input:empty {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+  }
+
+  /* CUSTOM LABEL */
+
+  .radiolist__input ~ label {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    padding-right: rem(32);
+    white-space: nowrap;
+  }
+
+  /* Label, not hovered or checked */
+
+  .radiolist__input:empty ~ label::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    width: rem(14);
+    height: rem(14);
+    margin-top: rem(-7);
+    border: 1px solid $theme-color;
+    border-radius: 50%;
+    background-color: #ffffff;
+    visibility: visible;
+    transition: all 0.5s;
+  }
+
+  .radiolist__input:empty ~ label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: rem(0);
+    z-index: 1;
+    width: rem(8);
+    height: rem(8);
+    margin-right: rem(3);
+    margin-top: rem(-4);
+    border-radius: 50%;
+    background-color: $text-color;
+    visibility: hidden;
+    opacity: 0;
+    transition: all $time-tr;
+  }
+
+  /* Checked */
+
+  .radiolist__input:checked ~ label::after {
+    visibility: visible;
+    opacity: 1;
+  }
+}

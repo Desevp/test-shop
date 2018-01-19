@@ -1,0 +1,12 @@
+.field-input {
+  position: relative;
+  width: 100%;
+  outline: none;
+  border: none;
+  height: rem(30);
+  border-bottom: 1px solid $theme-color;
+
+  @media (max-width: $mobile) {
+    text-align: center;
+  }
+}

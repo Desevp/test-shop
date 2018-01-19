@@ -1,17 +1,25 @@
 .btn {
-  border: none;
   cursor: pointer;
   white-space: nowrap;
-  transition: box-shadow $time-tr;
+  width: 100%;
+  border: 1px solid $theme-color;
+  color: $theme-color;
+  background-color: #ffffff;
+  height: rem(30);
+  font-weight: 300;
+
+  transition: all $time-tr;
 
   &:hover {
-    box-shadow: $shadow;
+    color: #ffffff;
+    background-color: $theme-color;
+
+
   }
 
   &:focus,
   &:active {
     outline: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 }
 

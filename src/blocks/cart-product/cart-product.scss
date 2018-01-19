@@ -1,0 +1,174 @@
+.cart-product {
+  position: relative;
+  padding-top: rem(20);
+  margin-bottom: rem(20);
+  border-top: 1px solid $theme-color;
+
+  &__wr {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+
+
+    @media (max-width: $fablet) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    position: relative;
+    @include font(11px);
+    min-height: rem(30);
+
+    @media (max-width: $fablet) {
+      min-height: 0;
+    }
+  }
+
+  &__title_name {
+
+    @media (max-width: $mobile) {
+      height: $line-height;
+      overflow: hidden;
+      width: 50%;
+    }
+  }
+
+  &__picture {
+    margin-right: rem(15);
+
+    @media (max-width: $fablet) {
+      flex-shrink: 0;
+      margin-bottom: rem(16);
+      margin-right: rem(10);
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: rem(100);
+    height: rem(150);
+    flex-shrink: 0;
+  }
+
+  &__content {
+    position: relative;
+    // padding-top: rem(30);
+    margin-top: rem(40);
+    display: inline-block;
+
+    @media (max-width: $fablet) {
+      margin-top: rem(20);
+    }
+  }
+
+  &__name {
+    text-align: left;
+    margin-right: rem(20);
+    min-width: rem(140);
+
+    @media (max-width: $fablet) {
+      width: calc(100% - 110px);
+      flex-grow: 1;
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: rem(16);
+    }
+  }
+
+  &__info {
+    margin-bottom: rem(5);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__count {
+    width: rem(70);
+    margin: 0 rem(5);
+
+    @media (max-width: $fablet) {
+      width: 25%;
+      margin: 0;
+    }
+  }
+
+  &__price {
+    width: rem(70);
+    margin: 0 rem(5);
+
+    @media (max-width: $fablet) {
+      width: 25%;
+      margin: 0;
+    }
+  }
+
+  &__sale {
+    width: rem(70);
+    margin: 0 rem(5);
+
+    @media (max-width: $fablet) {
+      width: 25%;
+      margin: 0;
+    }
+  }
+
+  &__total-price {
+    margin: 0 rem(5);
+    width: rem(120);
+
+    @media (max-width: $fablet) {
+      width: 25%;
+      margin: 0;
+    }
+  }
+
+  &__delete {
+    width: rem(50);
+    flex-shrink: 0;
+    margin-left: rem(5);
+
+    @media (max-width: $fablet) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      width: auto;
+      margin: 0;
+    }
+  }
+
+  &__delete-title {
+
+    @media (max-width: $fablet) {
+      display: none;
+    }
+  }
+
+  &__delete-content {
+
+    opacity: 1;
+    transition: opacity $time-tr;
+    cursor: pointer;
+
+    @media (max-width: $fablet) {
+      margin-top: 0;
+      margin-left: rem(5);
+    }
+
+    &::before {
+
+      @media (max-width: $fablet) {
+        content: 'Удалить';
+      }
+    }
+
+    &:hover {
+      opacity: $opacity;
+    }
+  }
+}
