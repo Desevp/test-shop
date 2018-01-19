@@ -1,4 +1,3 @@
-build/*
 !build/readme.md
 design/
 src/scss/style.scss
