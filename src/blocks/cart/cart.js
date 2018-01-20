@@ -31,6 +31,10 @@ var cart = function() {
   function changeCart(elements) {
 
     elements.find('.js-counter-value').change(function() {
+      if ((isNaN(parseInt($(this).val()))) || (parseInt($(this).val())<= 0)) {
+        $(this).val('1').text('1');
+      }
+
       updateCountProduct(
         $(this).closest('.js-cart-product').data('id'),
         $(this).val()
