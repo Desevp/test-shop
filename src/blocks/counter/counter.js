@@ -8,7 +8,7 @@ var initCounter = function() {
   var $this = $(this),
     btnMinus = $this.find('.js-counter-minus'),
     btnPlus = $this.find('.js-counter-plus'),
-    input = $this.find('.js-counter-value');
+    input = $this.find('.js-counter-value'),
     disableClassName = 'counter__btn_is-disable';
 
     if (input.val() === '1') {

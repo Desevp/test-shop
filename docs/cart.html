@@ -39,26 +39,26 @@
     <div class="page__content">
       <main class="container">
 
-        <div class="cart">
-          <section class="cart__sale">
-            <form class="sale-form" action="" method="post">
-                <div class="sale-form__title">
-                  Код купона на&nbsp;скидку
+        <section class="cart__sale">
+          <form class="sale-form" id="js-sale-form" action="" method="post">
+              <div class="sale-form__title">
+                Код купона на&nbsp;скидку
+              </div>
+              <div class="sale-form__input">
+                <input class="field-input" type="text" name="saleСoupon" value="">
+              </div>
+              <div class="sale-form__btn">
+                <button class="btn sale-form__btn js-sale-form-btn" type="button" name="button">активировать</button>
+                <div class="sale-form__success">
+                  купон активирован
                 </div>
-                <div class="sale-form__input">
-                  <input class="field-input" type="text" name="" value="">
-                </div>
-                <div class="sale-form__btn">
-                  <button class="btn sale-form__btn" type="button" name="button">активировать</button>
-                  <div class="sale-form__success">
-                    купон активирован
-                  </div>
-                </div>
-              </form>
-          </section>
+              </div>
+            </form>
+        </section>
 
-          <section class="cart__products">
-            <div class="cart-product">
+        <section class="cart js-cart">
+          <div class="cart__products">
+            <div class="cart-product js-cart-product" data-id="2">
               <div class="cart-product__wr">
                 <div class="cart-product__picture">
                   <div class="cart-product__title">
@@ -114,15 +114,15 @@
                   <div class="cart-product__title">
                     Цена
                   </div>
-                  <div class="cart-product__content icon icon_price">
-                    100
+                  <div class="cart-product__content icon icon_price js-cart-product-price" data-price="1000">
+                    1000
                   </div>
                 </div>
                 <div class="cart-product__sale">
                   <div class="cart-product__title">
                     Скидка
                   </div>
-                  <div class="cart-product__content icon icon_sale">
+                  <div class="cart-product__content icon icon_sale js-cart-product-sale" data-sale="10">
                     10
                   </div>
                 </div>
@@ -130,21 +130,21 @@
                   <div class="cart-product__title">
                     Итого
                   </div>
-                  <div class="cart-product__content icon icon_price">
-                    1100
+                  <div class="cart-product__content icon icon_price js-cart-product-total">
+                    900
                   </div>
                 </div>
                 <div class="cart-product__delete">
                   <div class="cart-product__title cart-product__delete-title">
                     Удалить
                   </div>
-                  <div class="cart-product__content cart-product__delete-content">
+                  <div class="cart-product__content cart-product__delete-content js-cart-product-delete">
                     <div class="del"></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="cart-product">
+            <div class="cart-product js-cart-product" data-id="1">
               <div class="cart-product__wr">
                 <div class="cart-product__picture">
                   <div class="cart-product__title">
@@ -200,15 +200,15 @@
                   <div class="cart-product__title">
                     Цена
                   </div>
-                  <div class="cart-product__content icon icon_price">
-                    100
+                  <div class="cart-product__content icon icon_price js-cart-product-price" data-price="2000">
+                    2000
                   </div>
                 </div>
                 <div class="cart-product__sale">
                   <div class="cart-product__title">
                     Скидка
                   </div>
-                  <div class="cart-product__content icon icon_sale">
+                  <div class="cart-product__content icon icon_sale js-cart-product-sale" data-sale="10">
                     10
                   </div>
                 </div>
@@ -216,29 +216,27 @@
                   <div class="cart-product__title">
                     Итого
                   </div>
-                  <div class="cart-product__content icon icon_price">
-                    1100
+                  <div class="cart-product__content icon icon_price js-cart-product-total">
+                    1900
                   </div>
                 </div>
                 <div class="cart-product__delete">
                   <div class="cart-product__title cart-product__delete-title">
                     Удалить
                   </div>
-                  <div class="cart-product__content cart-product__delete-content">
+                  <div class="cart-product__content cart-product__delete-content js-cart-product-delete">
                     <div class="del"></div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-
-          <section class="cart-total cart__total-section">
-            <div class="cart-total__val icon icon_price">1000</div>
-          </section>
-
-          <section class="cart__delivery">
+          </div>
+          <div class="cart-total cart__total-section">
+            <div class="cart-total__val icon icon_price js-subtotal-price">2800</div>
+          </div>
+          <div class="cart__delivery">
             <h2 class="cart__delivery-section-title">Способ доставки</h2>
-            <ul class="radiolist cart__delivery-items">
+            <ul class="radiolist cart__delivery-items js-delivery">
               <li class="cart__delivery-item">
                 <div>
                   <div class="cart__delivery-item-txt">Курьерская доставка до&nbsp;двери в&nbsp;любую точку&nbsp;РФ</div>
@@ -253,7 +251,7 @@
                   </div>
                 </div>
                 <div class="radiolist__input-wr cart__delivery-input">
-                  <input id="radio-1" class="radiolist__input" type="radio" name="radiolist" value="300" checked/>
+                  <input id="radio-1" class="radiolist__input js-delivery-courier" type="radio" name="radiolist" value="300" checked/>
                   <label for="radio-1" class="radiolist__label"><span class="icon icon_price">300</span></label>
                 </div>
               </li>
@@ -270,12 +268,12 @@
                 </div>
               </li>
             </ul>
-          </section>
+          </div>
+          <div class="cart-total cart__total-section">
+            <div class="cart-total__val icon icon_price js-total-price">3100</div>
+          </div>
+        </section>
 
-          <section class="cart-total cart__total-section">
-            <div class="cart-total__val icon icon_price">1000</div>
-          </section>
-        </div>
       </main>
     </div>
   </div>
