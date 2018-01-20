@@ -177,8 +177,8 @@
                   <div class="cart-product__title">
                     Цена
                   </div>
-                  <div class="cart-product__content icon icon_price js-cart-product-price" data-price="2000">
-                    2000
+                  <div class="cart-product__content icon icon_price js-cart-product-price" data-price="100">
+                    100
                   </div>
                 </div>
                 <div class="cart-product__sale">
@@ -194,7 +194,7 @@
                     Итого
                   </div>
                   <div class="cart-product__content icon icon_price js-cart-product-total">
-                    1900
+                    90
                   </div>
                 </div>
                 <div class="cart-product__delete">
@@ -213,22 +213,18 @@
           </div>
           <div class="cart__delivery">
             <h2 class="cart__delivery-section-title">Способ доставки</h2>
-            <ul class="radiolist cart__delivery-items js-delivery">
+            <ul class="radiolist cart__delivery-items" id="js-delivery" data-delivery-max-price="3000">
               <li class="cart__delivery-item">
                 <div>
                   <div class="cart__delivery-item-txt">Курьерская доставка до&nbsp;двери в&nbsp;любую точку&nbsp;РФ</div>
                   <div class="cart__delivery-item-subtxt">
-                    Товар доставляется бесплатно курьером до&nbsp;двери Вашего дома при сумме заказа от&nbsp;00&nbsp;000&nbsp;рублей.
+                    Товар доставляется бесплатно курьером до&nbsp;двери Вашего дома при сумме заказа от&nbsp;<span>3&nbsp;000&nbsp;</span>рублей.
                     <br />
-                    В&nbsp;случае заказа на&nbsp;сумму менее 00&nbsp;000&nbsp;рублей, доставка будет стоить 000&nbsp;рублей.
-                    <br />
-                    Стоимость 000&nbsp;руб.
-                    <br />
-                    Бесплатно от&nbsp;суммы 00000&nbsp;руб.
+                    В&nbsp;случае заказа на&nbsp;сумму менее <span>3&nbsp;000&nbsp;</span>рублей, доставка будет стоить <span>300</span> рублей.
                   </div>
                 </div>
                 <div class="radiolist__input-wr cart__delivery-input">
-                  <input id="radio-1" class="radiolist__input js-delivery-courier" type="radio" name="radiolist" value="300" checked/>
+                  <input id="radio-1" class="radiolist__input js-delivery-courier" data-delivery-price="300" type="radio" name="radiolist" value="300" checked/>
                   <label for="radio-1" class="radiolist__label"><span class="icon icon_price">300</span></label>
                 </div>
               </li>
@@ -247,7 +243,7 @@
             </ul>
           </div>
           <div class="cart-total cart__total-section">
-            <div class="cart-total__val icon icon_price js-total-price">3100</div>
+            <div class="cart-total__val icon icon_price js-total-price">990</div>
           </div>
         </section>
 

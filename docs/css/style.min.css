@@ -703,15 +703,15 @@ input {
   -webkit-transition: border-color 0.3s;
   transition: border-color 0.3s; }
 .field-input::-webkit-input-placeholder {
-    color: #f65454;
+    color: rgba(246, 84, 84, 0.7);
     -webkit-transition: color 0.3s;
     transition: color 0.3s; }
 .field-input::-moz-placeholder {
-    color: #f65454;
+    color: rgba(246, 84, 84, 0.7);
     -webkit-transition: color 0.3s;
     transition: color 0.3s; }
 .field-input:-moz-placeholder {
-    color: #f65454;
+    color: rgba(246, 84, 84, 0.7);
     -webkit-transition: color 0.3s;
     transition: color 0.3s; }
 .field-input:focus::-webkit-input-placeholder {
@@ -721,10 +721,9 @@ input {
 .field-input:focus:-moz-placeholder {
     color: transparent; }
 .field-input_error {
-    border-bottom: 1px solid #f65454; }
+    border-bottom: 1px solid rgba(246, 84, 84, 0.7); }
 .field-input_error::-webkit-input-placeholder {
-      color: #f65454;
-      opacity: 0.4; }
+      color: rgba(246, 84, 84, 0.7); }
 .cart__sale {
   margin-bottom: 1.875rem; }
 .cart__products {

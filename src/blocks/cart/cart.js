@@ -6,7 +6,7 @@ var cart = function() {
     changeCart($('.js-cart-product'));
     initDeleteProduct($('.js-cart-product-delete'));
 
-    $('.js-delivery input').change(function() {
+    $('#js-delivery input').change(function() {
       updateTotalPrice();
     });
   }
@@ -90,8 +90,9 @@ var cart = function() {
     }
   }
 
-  function getShipiningValue(minPrice, deliveryPrice) {
-    var price = getTotalPrice(),
+  function getShipiningValue() {
+    var minPrice = parseInt($('#js-delivery').data('delivery-max-price')),
+        price = getTotalPrice(),
         courierTextEl = $('.js-delivery-courier').siblings('label').find('span');
 
     if (price >= minPrice) {
@@ -99,10 +100,13 @@ var cart = function() {
       courierTextEl.html('0');
     }
     else {
-      $('.js-delivery-courier').val(deliveryPrice);
-      courierTextEl.html(deliveryPrice);
+      var deliveryPriceEl = $('.js-delivery-courier'),
+          deliveryPriceValue = deliveryPriceEl.data('delivery-price');
+
+      deliveryPriceEl.val(deliveryPriceValue);
+      courierTextEl.html(deliveryPriceValue);
     }
-    return parseInt($('.js-delivery input').filter(':checked').val());
+    return parseInt($('#js-delivery input').filter(':checked').val());
   }
 
   function getTotalPrice() {
@@ -115,8 +119,8 @@ var cart = function() {
 
   function updateTotalPrice() {
     $('.js-subtotal-price').text(new Intl.NumberFormat('ru-RU').format(getTotalPrice()));
-    var price = getShipiningValue(3000, 100) + getTotalPrice();
-    $('.js-total-price').text(new Intl.NumberFormat('ru-RU').format(price));
+    var price = getShipiningValue() + getTotalPrice();
+    $('.js-total-price').text(price);
   }
 
   return {
